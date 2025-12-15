@@ -1,0 +1,155 @@
+/* Import Google Font for a clean look */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* --- General Reset and Body Styling --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #71b7e6, #9b59b6); /* Soft gradient background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+/* --- Main Heading Styling --- */
+.head {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Container Styling --- */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Limit max width for better readability */
+}
+
+/* --- Input Area Styling --- */
+#input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#inputBox {
+    flex-grow: 1; /* Allows the input to take up available space */
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+#inputBox:focus {
+    border-color: #9b59b6; /* Highlight on focus */
+    outline: none;
+}
+
+.add {
+    background-color: #9b59b6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.add:hover {
+    background-color: #8e44ad;
+}
+
+.add:active {
+    transform: scale(0.98);
+}
+
+/* --- To-Do List Styling --- */
+#todolist {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    border-left: 5px solid #71b7e6; /* Accent color on the left */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.task-item:hover {
+    background-color: #f1f1f1;
+}
+
+.task-text {
+    flex-grow: 1;
+    font-size: 1rem;
+    cursor: pointer; /* Indicate it's clickable to mark complete */
+    padding: 5px; /* Add padding for better click area */
+    transition: text-decoration 0.3s, color 0.3s;
+}
+
+/* Styling for completed tasks */
+.task-item.completed {
+    border-left: 5px solid #27ae60; /* Green accent for completed */
+}
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* --- Delete Button Styling --- */
+.delete-btn {
+    background: none;
+    border: none;
+    color: #e74c3c; /* Red color for delete icon */
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 10px;
+    opacity: 0.6;
+    transition: opacity 0.3s, color 0.3s;
+}
+
+.delete-btn:hover {
+    color: #c0392b;
+    opacity: 1;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 480px) {
+    #input {
+        flex-direction: column; /* Stack input and button on small screens */
+    }
+
+    .add {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .head {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}

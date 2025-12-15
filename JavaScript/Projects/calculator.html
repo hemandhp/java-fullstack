@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" id="display" placeholder="0"><br><br>
+        <div class="one">
+            <div class="numbers">
+                <button onClick="append('1')" class="green" style="width: 45px; height: 45px;">1</button><br><br>
+                <button onClick="append('4')" class="green" style="width: 45px; height: 45px;">4</button><br><br>
+                <button onClick="append('7')" class="green" style="width: 45px; height: 45px;">7</button><br><br>
+                <button onClick="clearDisplay()" class="blue" style="width: 45px; height: 45px;">AC</button>
+            </div>
+            <div class="numbers">
+                <button onClick="append('2')" class="green" style="width: 45px; height: 45px;">2</button><br><br>
+                <button onClick="append('5')" class="green" style="width: 45px; height: 45px;">5</button><br><br>
+                <button onClick="append('8')" class="green" style="width: 45px; height: 45px;">8</button><br><br>
+                <button onClick="append('0')" class="green" style="width: 45px; height: 45px;">0</button>
+            </div>
+            <div class="numbers">
+                <button onClick="append('3')" class="green" style="width: 45px; height: 45px;">3</button><br><br>
+                <button onClick="append('6')" class="green" style="width: 45px; height: 45px;">6</button><br><br>
+                <button onClick="append('9')" class="green" style="width: 45px; height: 45px;">9</button><br><br>
+                <button onClick="result()" class="green" style="width: 45px; height: 45px;">=</button>
+            </div>
+            <div class="buttons">
+                <button onClick="append('+')" class="red" style="width: 45px; height: 45px;">+</button><br><br>
+                <button onClick="append('-')" class="red" style="width: 45px; height: 45px;">-</button><br><br>
+                <button onClick="append('*')" class="red" style="width: 45px; height: 45px;">x</button><br><br>
+                <button onClick="append('/')" class="red" style="width: 45px; height: 45px;">/</button><br>
+
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
