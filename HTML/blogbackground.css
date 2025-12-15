@@ -1,0 +1,79 @@
+header {
+    background: #ffffff;
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    background: #444;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.blog1 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url(09-apple.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px;
+
+
+
+}
+
+.para1 {
+    text-align: start;
+
+}
+
+.iphone {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.iphone16pro {
+    background-position: cover;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+.blog2 {
+    background-image: url(samsung-logo-1993.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px;
+    text-align: center;
+}
+
+parasam {
+    text-align: center;
+
+}
+
+
+
+
+
+footer {
+    background: #444;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+}

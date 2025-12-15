@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1>Basic Grid</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col basic-box ">Column-1</div>
+            <div class="col basic-box">Column-2</div>
+        </div>
+    </div>
+    <br><br>
+    <h2>Fixed Column</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 fixed-box ">Column-1</div>
+            <div class="col-6 fixed-box">Column-2</div>
+        </div>
+    </div>
+    <br><br>
+    <h3>Responsive Grid</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 responsive-column ">Small:6 medium:4</div>
+            <div class="col-sm-6 col-md-8 responsive-column">Small:6 medium:8</div>
+        </div>
+    </div>
+    <br><br>
+    <h4>Nested Grid</h4>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 nested-outer ">Outer column1
+                <div class="row">
+                    <div class="col-6 nested-inner ">Inner column</div>
+                    <div class="col-6 nested-inner ">Inner column</div>
+                </div>
+            </div>
+            <div class="col-6 nested-outer">Another Outer column</div>
+        </div>
+    </div>
+    <br><br>
+    <h5>Vertical Alignment</h5>
+    <div class="container">
+        <div class="row g-3">
+            <div class="col align-box">Top</div>
+            <div class="col align-box">Center</div>
+            <div class="col align-box">Bottom</div>
+        </div>
+    </div>
+</body>
+
+</html>

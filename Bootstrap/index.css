@@ -1,0 +1,47 @@
+.col {
+    background-color: cadetblue;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    gap: 10px;
+}
+
+.col-6 {
+    background-color: coral;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    gap: 10px;
+}
+
+.col-sm-6 {
+    background-color: darkkhaki;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    gap: 10px;
+}
+
+.nested-inner {
+    background-color: burlywood;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    gap: 10px;
+}
+
+.nested-outer {
+    background-color: darkgray;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    gap: 10px;
+}
+
+.align-box {
+    background-color: blueviolet;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 45px;
+}

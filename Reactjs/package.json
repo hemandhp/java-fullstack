@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "@tanstack/react-query": "^5.90.11",
+    "prop-types": "^15.8.1",
+    "react-hook-form": "^7.67.0",
+    "react-icons": "^5.5.0",
+    "react-project": "^0.0.30",
+    "react-router-dom": "^7.10.1",
+    "tailwindcss": "^4.1.18"
+  }
+}

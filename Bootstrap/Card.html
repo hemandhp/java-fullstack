@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<style>
+    .hhh:hover {
+        background-color: yellow;
+        color: black;
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 10px;
+        transition: 0.2s ease-in;
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h3 class="text-secondary mb-2 p-3">1. Basic card structure</h3>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                Basic card with only body content
+            </div>
+        </div>
+        <h3 class="text-secondary mb-2 p-3">2. Card with header and footer</h3>
+        <div class="card" style="width: 18rem;">
+            <h5 class="card-header">
+                Header
+            </h5>
+            <h6 class="card-title">
+                Card Title
+            </h6>
+            <div class="card-body">
+                <p class="card-text">Main card contents go here!</p>
+            </div>
+            <div class="card-footer text-muted">
+                Footer
+            </div>
+        </div>
+
+
+        <h3 class="text-secondary mb-2 p-3">3. Card with Title,
+            Subtitle, Text</h3>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Subtitle</h6>
+                <p class="card-text">Supporting card text for more details
+                <details>This is an example for hide details</details>
+                </p>
+            </div>
+        </div>
+
+        <h3 class="text-secondary mb-2 p-3">4. Card with image</h3>
+        <div class="card" style="width: 18rem;">
+            <img src="bootstrap-5-new-logo.jpg" class="card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">Card with image title</h4>
+                <p class="card-text">Text follows the image</p>
+                <a href="#" class="btn btn-primary">Go live!</a>
+            </div>
+        </div>
+
+        <h3 class="text-secondary mb-2 p-3">5. Card image overlay</h3>
+        <div class="card" style="width: 18rem;">
+            <img src="bootstrap-5-new-logo.jpg" class="card-img">
+            <div class="card-img-overlay">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Text over the image</p>
+                <a href="#" class="btn btn-outline-danger">Go live!</a>
+            </div>
+        </div>
+        <h3 class="text-secondary mb-2 p-3">6. Card List groups</h3>
+        <div class="card" style="width: 18rem;">
+            <h4 class="card-header">List</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item text-muted">First item</li>
+                <li class="list-group-item text-muted">Second item</li>
+                <li class="list-group-item text-muted">Third item</li>
+            </ul>
+        </div>
+        <h3 class="text-secondary mb-2 p-3">7. Card with colored bg</h3>
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Primary status</div>
+            <div class="card-body">
+                <div class="hhh card-title">Primary card title</div>
+                <p class="hhh card-text">Quick content here!</p>
+            </div>
+        </div>
+
+        <h3 class="text-secondary mb-2 p-3">8. Card sizing utilities </h3>
+        <div class="card w-75">
+            <div class="card-body">
+                <h5 class="card-title">75% width card</h5>
+                <p class="card-text">This card uses the w-75 class to set its width to 75% of its parent.</p>
+            </div>
+        </div>
+
+        <h3 class="text-secondary mb-2 p-3">9. Card Alignment utilities </h3>
+        <div class="card text-center bg-success text-white">
+            <div class="card-body">
+                <h5 class="card-title">Centered text</h5>
+                <p class="card-text">This card uses the text-center class to center its text.</p>
+            </div>
+        </div><br>
+        <div class="card text-start bg-success text-white">
+            <div class="card-body">
+                <h5 class="card-title">Centered text</h5>
+                <p class="card-text">This card uses the text-center class to center its text.</p>
+            </div>
+        </div><br>
+        <div class="card text-end bg-success text-white">
+            <div class="card-body">
+                <h5 class="card-title">Centered text</h5>
+                <p class="card-text">This card uses the text-center class to center its text.</p>
+            </div>
+        </div>
+
+        <h3 class="text-secondary mb-2 p-3">10. Card Border and shadows </h3>
+        <div class="card border-success mb-3 shadow-lg">
+            <div class="card-header text-success">Bordered card</div>
+            <div class="card-body text-success">
+                <h5 class="card-title">Success card title</h5>
+                <p class="card-text">This card has a success border and text.</p>
+            </div>
+        </div>
+
+        <h3 class="text-secondary mb-2 p-3">11. Card Group </h3>
+        <div class="card-group mb-3">
+            <div class="card">
+                <div class="card-body">card 1</div>
+            </div>
+            <div class="card">
+                <div class="card-body">card 2</div>
+            </div>
+            <div class="card">
+                <div class="card-body">card 3</div>
+            </div>
+        </div>
+
+        <h3 class="text-secondary mb-2 p-3">12. Grid layout </h3>
+        <div class="row row-cols-1 row-cols-md-2 g-3 text-center">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        Grid layout card 1
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        Grid layout card 2
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

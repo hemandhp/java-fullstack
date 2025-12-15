@@ -1,0 +1,23 @@
+h2 {
+    text-align: center;
+    color: darkslategray;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    grid-template-rows: 100px 150px 50px;
+    gap: 20px;
+}
+
+.box {
+    background-color: darkolivegreen;
+    text-align: center;
+    color: wheat;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(38, 114, 11, 0.7);
+
+}

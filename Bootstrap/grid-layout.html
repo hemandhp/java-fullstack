@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="grid-layout.css">
+
+</head>
+
+<body>
+
+
+
+    <body>
+        <h2>1.auto layot columns [equal width]</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col auto-box"> columns 1</div>
+                <div class="col auto-box"> column 2</div>
+                <div class="col auto-box">column 3</div>
+            </div>
+        </div>
+        <br>
+        <h2>2.equal width + one fixed width</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col auto-box">equal</div>
+                <div class="col-auto fixed-box">fixed width</div>
+                <div class="col auto-box">equal</div>
+            </div>
+        </div>
+        <h2>3.varible width content</h2>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto variable-box">short text</div>
+            </div>
+        </div>
+        <h2>4.responsive breakpoints</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 responsive-box">responsive 1
+                </div>
+                <div class="col-12 col-sm-6 col-md-8 col-lg-9 responsive-box">responsive 2</div>
+            </div>
+        </div>
+        <h2>5.stacked to horizontal</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8 stacked-box">Main content</div>
+                <div class="col-12 col-md-4 stacked-box">Side content</div>
+            </div>
+        </div>
+        <h2>6.mix and match rows and col</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-4 mix-box">A</div>
+                <div class="col-6 col-sm-4 mix-box">B</div>
+                <div class="col-12 col-sm-4 mix-box">C</div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

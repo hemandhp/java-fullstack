@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #0f1424;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.profile-card {
+    grid-row: span 2;
+    background-color: #5746ea;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+
+}
+
+.profile-info {
+    display: flex;
+
+    width: 250px;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-info img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: 3px solid white;
+}
+
+.profile-info p {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.profile-info h1 {
+    font-size: 1.5rem;
+}
+
+.time-toggle {
+    background-color: #1c1f4a;
+    padding: 1.5rem;
+    border-radius: 15px 15px 15px 15px;
+    position: relative;
+    top: -10px;
+}
+
+.time-toggle p {
+    color: #c6c6f3;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.time-toggle p:hover {
+    opacity: 1;
+}
+
+.time-toggle .active {
+    color: white;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-bg {
+    height: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0 0;
+}
+
+
+
+
+.card-content {
+    background-color: #1c1f4a;
+    padding: 1.5rem;
+    border-radius: 15px 15px 15px 15px;
+    position: relative;
+    top: -10px;
+}
+
+.card-content .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.7;
+}
+
+.card-content h2 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    opacity: 0.5;
+}
+
+
+.work .card-bg {
+    background-color: #ff8b64;
+}
+
+.play .card-bg {
+    background-color: #55c2e6;
+}
+
+.study .card-bg {
+    background-color: #ff5c7c;
+}
+
+.exercise .card-bg {
+    background-color: #4acf81;
+}
+
+.social .card-bg {
+    background-color: #7335d2;
+}
+
+.self-care .card-bg {
+    background-color: #f1c75b;
+}

@@ -1,0 +1,48 @@
+.item1 {
+    margin: 0;
+    background-color: cornsilk;
+    height: 800px;
+    width: 600px;
+    border: 1px solid rgb(255, 255, 255);
+    background-image: url(bmw_logo_PNG19707.png);
+    background-size: 100px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+
+}
+
+.item2 {
+    margin: 0;
+    background-color: coral;
+    height: 800px;
+    width: 600px;
+    border: 1px solid rgb(255, 255, 255);
+    background-image: url(benz.jpg);
+    background-size: 100px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item3 {
+    margin: 0;
+    background-color: cornflowerblue;
+    height: 800px;
+    width: 600px;
+    border: 1px solid rgb(255, 255, 255);
+    background-image: url(porche.jpg);
+
+    background-size: 100px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.container {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+}

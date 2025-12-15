@@ -1,0 +1,64 @@
+nav {
+    background: #ffffff;
+    padding: 50px;
+    text-align: start;
+
+}
+
+.sam {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+
+nav a {
+    color: rgb(54, 54, 54);
+    margin: 0 15px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+nav input[type=text] {
+    float: right;
+    padding: 6px;
+
+    border-radius: 30px;
+    background-color: #f1f1f1;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+.box1 {
+    width: 1465px;
+    height: 700px;
+    background-color: #f1f1f1;
+    padding: 20px;
+
+    background-image: url(sam1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box2 {
+    width: 1465px;
+    height: 600px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    padding-top: 10px;
+    margin-top: 20px;
+
+    background-image: url(sam2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.one {
+    width: 200px;
+    height: 200px;
+    background-color: #f1f1f1;
+}

@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(0, 0, 0);
+
+}
+
+.box1 {
+    padding: 20px;
+    border: 30px solid rgb(0, 0, 0);
+    color: rgb(244, 100, 16);
+    background-image: url(porche.jpg );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    text-align: center;
+
+}
+
+.box2 {
+    padding: 20px;
+    border: 30px solid rgb(0, 0, 0);
+
+    background-image: url(bmwcar.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+
+}
+
+.box3 {
+    padding: 20px;
+    border: 30px solid rgb(0, 0, 0);
+    color: rgb(243, 11, 11);
+    background-image: url(benz.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    text-align: center;
+
+
+}
+
+.porche {
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px rgb(255, 89, 0);
+}
+
+.bmw {
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px rgb(255, 0, 208);
+}
+
+.benz {
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(255, 0, 0);
+    ;
+
+
+}

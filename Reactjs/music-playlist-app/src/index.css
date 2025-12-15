@@ -1,0 +1,269 @@
+/*
+ * --------------------------------------------------------------------------
+ * 1. Global Styles and Typography (Spotify Palette)
+ * --------------------------------------------------------------------------
+ */
+
+:root {
+    --color-spotify-black: #121212;     /* Main background */
+    --color-spotify-dark-gray: #181818; /* Component/Section background */
+    --color-spotify-light-gray: #282828;/* Card background/Hover state */
+    --color-spotify-green: #1DB954;     /* Primary accent color (Spotify Green) */
+    --color-text-light: #ffffff;        /* Primary text */
+    --color-text-secondary: #b3b3b3;    /* Secondary text, captions */
+    --color-input-bg: #333333;          /* Input field background */
+    --font-primary: 'Circular Std', sans-serif; /* Simulating the Spotify font */
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--color-spotify-black);
+    color: var(--color-text-light);
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+.App {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--color-spotify-green);
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 2.2em;
+}
+
+h2 {
+    color: var(--color-text-light);
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 1.6em;
+}
+
+/*
+ * --------------------------------------------------------------------------
+ * 2. Controls Section (Add Song & Search)
+ * --------------------------------------------------------------------------
+ */
+
+/* Input & Select Styling */
+input[type="text"],
+input[type="number"],
+select {
+    padding: 10px 15px;
+    border: none;
+    background-color: var(--color-input-bg);
+    color: var(--color-text-light);
+    border-radius: 4px;
+    flex-grow: 1;
+    min-width: 0; 
+    transition: box-shadow 0.2s;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-spotify-green); /* Green glow on focus */
+}
+
+/* Button Styling (General) */
+button {
+    background-color: var(--color-spotify-green);
+    color: var(--color-spotify-black); /* Contrast text against the green */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 500px; /* Pill shape */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #1ed760; /* Slightly brighter green on hover */
+    transform: scale(1.02);
+}
+
+/* 2.1. AddSongForm */
+
+.add-song-form {
+    background: var(--color-spotify-dark-gray);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.add-song-form h3 {
+    width: 100%;
+    margin: 0 0 10px 0;
+    color: var(--color-spotify-green);
+    font-size: 1.2em;
+}
+
+.add-song-form input {
+    flex: 1 1 180px;
+}
+.add-song-form button {
+    flex: 0 0 auto; /* Do not grow */
+}
+
+/* 2.2. SearchBar */
+
+.search-bar {
+    margin-bottom: 20px;
+}
+.search-bar input {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.1em;
+}
+
+/*
+ * --------------------------------------------------------------------------
+ * 3. Playlist and Song Cards
+ * --------------------------------------------------------------------------
+ */
+
+.playlist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.song-card {
+    background: var(--color-spotify-dark-gray);
+    padding: 15px 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.2s ease;
+}
+
+.song-card:hover {
+    background: var(--color-spotify-light-gray); /* Highlight on hover */
+}
+
+.song-card h4 {
+    margin: 0;
+    color: var(--color-text-light);
+    font-size: 1.1em;
+    flex-basis: 30%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.song-card p {
+    margin: 0;
+    color: var(--color-text-secondary);
+    font-size: 0.9em;
+    flex-basis: 20%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.song-card .genre {
+    font-weight: bold;
+    color: var(--color-text-secondary);
+    flex-basis: 15%;
+}
+
+.delete-btn {
+    background-color: transparent; /* Transparent button */
+    color: var(--color-text-secondary);
+    border: 1px solid var(--color-text-secondary);
+    padding: 5px 10px;
+    border-radius: 500px;
+    font-size: 0.8em;
+    transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+    font-weight: normal;
+}
+
+.delete-btn:hover {
+    background-color: #555555;
+    color: var(--color-text-light);
+    border-color: var(--color-text-light);
+    transform: scale(1.0); /* Remove the standard button scaling */
+}
+
+/*
+ * --------------------------------------------------------------------------
+ * 4. NotFound Message
+ * --------------------------------------------------------------------------
+ */
+
+.not-found {
+    text-align: center;
+    padding: 40px;
+    background: var(--color-spotify-dark-gray);
+    border-radius: 8px;
+    margin-top: 30px;
+    border-top: 3px solid var(--color-spotify-green);
+}
+
+.not-found h2 {
+    color: var(--color-spotify-green);
+    margin-top: 0;
+}
+
+.not-found p {
+    color: var(--color-text-secondary);
+}
+
+/*
+ * --------------------------------------------------------------------------
+ * 5. Responsiveness
+ * --------------------------------------------------------------------------
+ */
+
+@media (max-width: 768px) {
+    /* Song Card adjusts for small screens */
+    .song-card {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .song-card h4, 
+    .song-card p, 
+    .song-card .genre {
+        flex-basis: 50%;
+        margin-bottom: 5px;
+        font-size: 1em;
+    }
+    
+    .song-card h4 {
+        flex-basis: 100%;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    
+    .delete-btn {
+        flex-basis: 100%;
+        margin-top: 10px;
+    }
+
+    /* Form adjustments */
+    .add-song-form {
+        flex-direction: column;
+    }
+    
+    .add-song-form input,
+    .add-song-form button {
+        width: 100%;
+        flex: none;
+    }
+}

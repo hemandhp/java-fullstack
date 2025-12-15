@@ -1,0 +1,232 @@
+
+
+:root {
+    --color-dark-bg: #1e1e1e;       /* Deep charcoal background */
+    --color-mid-bg: #2d2d2d;        /* Component card background */
+    --color-text-light: #ffffff;    /* Primary text color */
+    --color-text-secondary: #aaaaaa;/* Secondary text/placeholder color */
+    --color-accent: #e50914;        /* Bold cinema red accent */
+    --color-input-border: #444444;  /* Light border for inputs */
+    --font-primary: 'Arial', sans-serif;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--color-dark-bg);
+    color: var(--color-text-light);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.App {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--color-accent);
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h2 {
+    border-bottom: 2px solid var(--color-accent);
+    padding-bottom: 5px;
+    margin-top: 40px;
+    color: var(--color-text-light);
+}
+
+/*
+ * --------------------------------------------------------------------------
+ * 2. Controls Section (Add, Search, Filter)
+ * --------------------------------------------------------------------------
+ */
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    background: var(--color-mid-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.filter-and-search {
+    display: flex;
+    gap: 20px;
+}
+
+/* Input & Select Styling */
+input[type="text"],
+input[type="number"],
+select {
+    padding: 10px 15px;
+    border: 1px solid var(--color-input-border);
+    background-color: var(--color-dark-bg);
+    color: var(--color-text-light);
+    border-radius: 4px;
+    flex-grow: 1;
+    min-width: 0; 
+}
+
+/* Button Styling (General) */
+button {
+    background-color: var(--color-accent);
+    color: var(--color-text-light);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #a20d0d; /* Slightly brighter red */
+    transform: translateY(-1px);
+}
+
+/* 2.1. AddMovieForm */
+
+.add-movie-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.add-movie-form h3 {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: var(--color-accent);
+}
+
+.add-movie-form input,
+.add-movie-form select {
+    flex: 1 1 200px; /* Allows inputs to wrap gracefully */
+}
+
+/* 2.2. SearchBar & CategoryFilter */
+
+.search-bar, .category-filter {
+    flex: 1;
+}
+
+.search-bar input {
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+/*
+ * --------------------------------------------------------------------------
+ * 3. Movie List and Cards
+ * --------------------------------------------------------------------------
+ */
+
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.movie-card {
+    background: var(--color-mid-bg);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid var(--color-accent); /* Unique border accent */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.movie-card h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--color-text-light);
+    font-size: 1.3em;
+}
+
+.movie-card p {
+    margin: 5px 0;
+    color: var(--color-text-secondary);
+}
+
+.movie-card .category {
+    font-style: italic;
+    color: #ffd700; /* Gold color for category */
+}
+
+.delete-btn {
+    background-color: #900000; /* Darker red for delete to differentiate */
+    margin-top: 15px;
+    padding: 8px 15px;
+    font-size: 0.9em;
+}
+
+.delete-btn:hover {
+    background-color: var(--color-accent);
+}
+
+/*
+ * --------------------------------------------------------------------------
+ * 4. NotFound Message
+ * --------------------------------------------------------------------------
+ */
+
+.not-found {
+    text-align: center;
+    padding: 40px;
+    background: var(--color-mid-bg);
+    border-radius: 8px;
+    margin-top: 30px;
+    border: 2px dashed var(--color-input-border);
+}
+
+.not-found h2 {
+    color: var(--color-accent);
+    border-bottom: none;
+}
+
+.not-found p {
+    color: var(--color-text-secondary);
+}
+
+/*
+ * --------------------------------------------------------------------------
+ * 5. Responsiveness
+ * --------------------------------------------------------------------------
+ */
+
+@media (max-width: 768px) {
+    .filter-and-search {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .add-movie-form {
+        flex-direction: column;
+    }
+    
+    .add-movie-form input,
+    .add-movie-form select,
+    .add-movie-form button {
+        width: 100%;
+        flex: none; 
+    }
+
+    .movie-card {
+        padding: 15px;
+    }
+}

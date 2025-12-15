@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="column wrap.css">
+</head>
+
+<body>
+    <h2>Column Wrapping Ex.</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-10 box">column1</div>
+            <div class="col-6 box">col-6<br>Subsequent columns continue along the new line.</div>
+            <div class="col-6 box">col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new
+                line as one contiguous unit.</div>
+        </div>
+    </div>
+    <br>
+    <h2>Column Breaking w-100 Ex.</h2>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="box1 col-6 bg-warning text-white text-center p-3">column1</div>
+            <div class="box1 col-6 bg-success text-white text-center p-3">column2</div>
+            <div class="w-100"></div>
+            <div class="box1 col-6 bg-danger text-white text-center">column3</div>
+            <div class="box1 col-6 bg-primary text-white text-center">column4</div>
+
+
+
+        </div>
+    </div>
+    <br>
+    <h3>Order class</h3>
+    <div class="container mt-4">
+        <div class="row text-center">
+            <div class="col bg-danger text-white p-3 order-2">First in html,visually it is second</div>
+            <div class="col bg-success text-white p-3 order-1">Second in html, visually it is first</div>
+            <div class="col bg-warning text-white p-3 order-3">Third in html, visually it is third</div>
+        </div>
+    </div>
+    <br>
+    <h3>Responsive re-ordering</h3>
+    <div class="row">
+        <div class="col order-md-3 bg-primary p-3 order-1">Column A</div>
+        <div class="col order-md-1 bg-warning p-3 order-2">Column B</div>
+        <div class="col order-md-2 bg-success p-3 order-3">Column C</div>
+    </div>
+
+
+
+</body>
+
+</html>

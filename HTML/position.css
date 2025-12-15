@@ -1,0 +1,50 @@
+.box1 {
+    color: white;
+    background-image: url(benz.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: slategrey;
+    position: static;
+
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    padding: 20px;
+}
+
+.box2 {
+    background-color: brown;
+    padding: 20px;
+
+
+    position: relative;
+    top: 100px;
+
+
+
+
+
+}
+
+.cc {
+    background-color: lightseagreen;
+    position: sticky;
+    top: 100px;
+    left: 100px;
+    right: 100px;
+    bottom: 100px;
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+    padding: 20px;
+
+
+}
+
+.rr {
+    background-color: rgb(56, 232, 29);
+    height: 400px;
+    width: 400px;
+    padding-top: -30px;
+}
